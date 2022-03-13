@@ -36,51 +36,11 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={A Minimal Book Example},
-  pdfauthor={Yihui Xie},
+  pdftitle={Topic Modelling Resources},
+  pdfauthor={Keefellow},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -122,9 +82,9 @@
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{A Minimal Book Example}
-\author{Yihui Xie}
-\date{2022-03-06}
+\title{Topic Modelling Resources}
+\author{Keefellow}
+\date{2022-03-13}
 
 \begin{document}
 \maketitle
@@ -133,140 +93,201 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{prerequisites}{%
-\chapter{Prerequisites}\label{prerequisites}}
+\hypertarget{about-this-collection}{%
+\chapter{About this collection}\label{about-this-collection}}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
+There are plenty of resources for learning topic modelling, and this holds some of them.
 
-The \textbf{bookdown} package can be installed from CRAN or Github:
+\hypertarget{textbooks}{%
+\chapter{Textbooks}\label{textbooks}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github("rstudio/bookdown")}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{mastering-text-mining-with-r}{%
+\section{Mastering Text Mining with R}\label{mastering-text-mining-with-r}}
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading \texttt{\#}.
+Chapter~5.~Text Summarization and Clustering
+- Topic modeling
+- Latent semantic analysis
+- Machine learning-based text summarization
+- Text clustering
+- Sentence completion
+\url{https://learning.oreilly.com/library/view/mastering-text-mining/9781783551811/ch05.html}
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
+\hypertarget{practical-text-mining-and-statistical-analysis-for-non-structured-text-data-applications}{%
+\section{Practical Text Mining and Statistical Analysis for Non-structured Text Data Applications}\label{practical-text-mining-and-statistical-analysis-for-non-structured-text-data-applications}}
 
-\hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+An Exploratory Literature Survey Using Text Mining and Beyond : A practical example
+\url{https://learning.oreilly.com/library/view/practical-text-mining/9780123869791/xhtml/CHP005.html\#CESECTITLE0100}
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+\hypertarget{text-mining-with-r}{%
+\section{Text Mining with R}\label{text-mining-with-r}}
 
-Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
+Chapter on Topic Modelling
+\url{https://learning.oreilly.com/library/view/text-mining-with/9781491981641/ch06.html}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\hypertarget{natural-language-processing-with-python-and-spacy}{%
+\section{Natural Language Processing with Python and spaCy}\label{natural-language-processing-with-python-and-spacy}}
 
-\begin{figure}
+Linguistic Primer
+\url{https://learning.oreilly.com/library/view/natural-language-processing/9781098122652/xhtml/app01.xhtml\#lev174}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/nice-fig-1} 
+Extracting and using linguistic features
+\url{https://learning.oreilly.com/library/view/natural-language-processing/9781098122652/xhtml/ch04.xhtml\#lev45}
 
-}
+\hypertarget{website-resources}{%
+\chapter{Website Resources}\label{website-resources}}
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+\#\#Topic Models Learning and R Resources
+\url{https://github.com/trinker/topicmodels_learning}
 
-Reference a figure by its code chunk label with the \texttt{fig:} prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can reference tables generated from \texttt{knitr::kable()}, e.g., see Table \ref{tab:nice-tab}.
+\hypertarget{apache-opennlp-library-is-a-machine-learning-based-toolkit-for-the-processing-of-natural-language-text.}{%
+\section{Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.}\label{apache-opennlp-library-is-a-machine-learning-based-toolkit-for-the-processing-of-natural-language-text.}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\url{https://opennlp.apache.org/}
 
-\begin{table}
+\hypertarget{the-stanford-natural-language-processing-group}{%
+\section{The Stanford Natural Language Processing Group}\label{the-stanford-natural-language-processing-group}}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
+\url{https://nlp.stanford.edu/software/}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+\hypertarget{the-summer-institutes-in-computational-social-science}{%
+\section{The Summer Institutes in Computational Social Science}\label{the-summer-institutes-in-computational-social-science}}
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+Open source teaching and learning resources for computational social science
+\url{https://sicss.io/overview}
+Previous editions
+\url{https://github.com/compsocialscience/summer-institute}
 
-Here is a review of existing methods.
+\hypertarget{computational-social-science-soc-690}{%
+\section{Computational Social Science (Soc 690)}\label{computational-social-science-soc-690}}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+Course materials from Duke University
+\url{https://cbail.github.io/comp_soc_grad/Home.html\#An_Introduction_to_Text_Analysis}
 
-We describe our methods in this chapter.
+\hypertarget{journal-articles}{%
+\chapter{Journal Articles}\label{journal-articles}}
 
-Math can be added in body using usual syntax like this
+\hypertarget{a-review-of-topic-modeling-methods}{%
+\section{A review of topic modeling methods}\label{a-review-of-topic-modeling-methods}}
 
-\hypertarget{math-example}{%
-\section{math example}\label{math-example}}
+\url{https://doi.org/10.1016/j.is.2020.101582}
+See Fig 8 for Decision tree for selecting a topic modeling method.
+\url{https://ars-els-cdn-com.libproxy.nie.edu.sg/content/image/1-s2.0-S0306437920300703-gr8.jpg}
 
-\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+\hypertarget{using-topic-modeling-methods-for-short-text-data-a-comparative-analysis}{%
+\section{Using Topic Modeling Methods for Short-Text Data: A Comparative Analysis}\label{using-topic-modeling-methods-for-short-text-data-a-comparative-analysis}}
 
-\[
-SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-\]
+\url{https://www.frontiersin.org/articles/10.3389/frai.2020.00042/full}
 
-You can also use math in footnotes like this\footnote{where we mention \(p = \frac{a}{b}\)}.
+\hypertarget{topic-modeling-a-comprehensive-review}{%
+\section{Topic Modeling: A Comprehensive Review}\label{topic-modeling-a-comprehensive-review}}
 
-We will approximate standard error to 0.027\footnote{\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+\url{https://eprints.eudl.eu/id/eprint/682/1/eai.13-7-2018.159623.pdf}
 
-  \[
-  SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-  \]}
+\hypertarget{youtube-resources}{%
+\chapter{YouTube Resources}\label{youtube-resources}}
 
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
+\hypertarget{sicss-2018---topic-modelsstructural-topic-models-day-3.-june-20-2018}{%
+\section{SICSS 2018 - Topic Models/Structural Topic Models (Day 3. June 20, 2018)}\label{sicss-2018---topic-modelsstructural-topic-models-day-3.-june-20-2018}}
 
-Some \emph{significant} applications are demonstrated in this chapter.
+\url{https://www.youtube.com/watch?v=k-zkxdxyjTk}
 
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
+\hypertarget{structure-topic-modelling}{%
+\section{Structure Topic Modelling}\label{structure-topic-modelling}}
 
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
+\url{https://www.youtube.com/watch?v=3kcjbzy4UPM}
 
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
+\hypertarget{structural-topic-modelling}{%
+\chapter{Structural Topic Modelling}\label{structural-topic-modelling}}
 
-We have finished a nice book.
+\hypertarget{stm-r-package-for-structural-topic-models}{%
+\section{stm: R Package for Structural Topic Models}\label{stm-r-package-for-structural-topic-models}}
+
+\url{https://cran.r-project.org/web/packages/stm/vignettes/stmVignette.pdf}
+
+\hypertarget{tutorials}{%
+\section{Tutorials}\label{tutorials}}
+
+\url{http://thomaselliott.me/pdfs/earl/topic_modeling.html}
+\url{https://cbail.github.io/SICSS_Topic_Modeling.html}
+\url{https://me.eui.eu/andrea-de-angelis/blog/structural-topic-models-to-study-political-text-an-application-to-the-five-star-movements-blog/}
+
+\hypertarget{publications}{%
+\chapter{Publications}\label{publications}}
+
+\hypertarget{the-structural-topic-model-and-applied-social-science}{%
+\section{The Structural Topic Model and Applied Social Science}\label{the-structural-topic-model-and-applied-social-science}}
+
+\url{https://scholar.princeton.edu/files/bstewart/files/stmnips2013.pdf}
+
+\hypertarget{structural-topic-models-for-open-ended-survey-responses}{%
+\section{Structural Topic Models for Open-Ended Survey Responses}\label{structural-topic-models-for-open-ended-survey-responses}}
+
+\url{https://scholar.harvard.edu/files/dtingley/files/topicmodelsopenendedexperiments.pdf}
+
+\hypertarget{mining-quality-determinants-of-product-service-systems-from-user-generated-contents}{%
+\section{Mining quality determinants of product-service systems from user-generated contents}\label{mining-quality-determinants-of-product-service-systems-from-user-generated-contents}}
+
+\url{https://doi.org/10.1080/08982112.2021.1877305}
+
+\hypertarget{covid-19-twitter-communication-of-major-societal-stakeholders-health-institutions-the-government-and-the-news-media}{%
+\section{COVID-19 Twitter Communication of Major Societal Stakeholders: Health Institutions, the Government, and the News Media}\label{covid-19-twitter-communication-of-major-societal-stakeholders-health-institutions-the-government-and-the-news-media}}
+
+\url{https://ijoc.org/index.php/ijoc/article/view/17147/3575}
+
+\hypertarget{topic-modeling-and-user-network-analysis-on-twitter-during-world-lupus-awareness-day}{%
+\section{Topic Modeling and User Network Analysis on Twitter during World Lupus Awareness Day}\label{topic-modeling-and-user-network-analysis-on-twitter-during-world-lupus-awareness-day}}
+
+\url{https://dx.doi.org/10.3390\%2Fijerph17155440}
+
+\hypertarget{toward-understanding-the-topical-structure-of-hospitality-literature-applying-machine-learning-and-traditional-statistics.}{%
+\section{Toward understanding the topical structure of hospitality literature: Applying machine learning and traditional statistics.}\label{toward-understanding-the-topical-structure-of-hospitality-literature-applying-machine-learning-and-traditional-statistics.}}
+
+\url{https://psycnet.apa.org/doi/10.1108/IJCHM-11-2017-0714}
+
+\hypertarget{topic-modeling-as-a-strategy-of-inquiry-in-organizational-research-a-tutorial-with-an-application-example-on-organizational-culture}{%
+\section{Topic Modeling as a Strategy of Inquiry in Organizational Research: A Tutorial With an Application Example on Organizational Culture}\label{topic-modeling-as-a-strategy-of-inquiry-in-organizational-research-a-tutorial-with-an-application-example-on-organizational-culture}}
+
+\url{https://doi.org/10.1177/1094428118773858}
+
+\hypertarget{yet-to-classify}{%
+\chapter{Yet to classify}\label{yet-to-classify}}
+
+\hypertarget{apache-opennlp-library-is-a-machine-learning-based-toolkit-for-the-processing-of-natural-language-text.-1}{%
+\section{Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.}\label{apache-opennlp-library-is-a-machine-learning-based-toolkit-for-the-processing-of-natural-language-text.-1}}
+
+\url{https://opennlp.apache.org/}
+
+\url{https://learning.oreilly.com/library/view/mastering-text-mining/9781783551811/ch05.html}
+
+\url{https://learning.oreilly.com/library/view/practical-text-mining/9780123869791/xhtml/CHP005.html\#CESECTITLE0100}
+
+\url{https://learning.oreilly.com/library/view/text-mining-with/9781491981641/ch06.html}
+
+\url{https://learning.oreilly.com/library/view/natural-language-processing/9781098122652/xhtml/app01.xhtml\#lev174}
+
+\url{https://learning.oreilly.com/library/view/natural-language-processing/9781098122652/xhtml/ch04.xhtml\#lev45}
+\url{https://www.youtube.com/watch?v=3kcjbzy4UPM}
+
+Be familiar with document term matrix
+
+\url{https://www.youtube.com/watch?v=k-zkxdxyjTk} download this video
+
+\url{https://sicss.io/overview}
+\url{https://cbail.github.io/comp_soc_grad/Home.html\#An_Introduction_to_Text_Analysis}
+
+\url{https://github.com/compsocialscience/summer-institute}
+
+\url{https://sicss.io/locations\#2017}
+
+\url{https://doi-org.libproxy.nie.edu.sg/10.1016/j.is.2020.101582}
+\url{https://ars-els-cdn-com.libproxy.nie.edu.sg/content/image/1-s2.0-S0306437920300703-gr8.jpg}
+
+\url{https://www.frontiersin.org/articles/10.3389/frai.2020.00042/full}
+
+\url{https://eprints.eudl.eu/id/eprint/682/1/eai.13-7-2018.159623.pdf}
+
+A review of topic modeling methods
+\url{https://doi.org/10.1016/j.trc.2017.12.018}
 
   \bibliography{book.bib,packages.bib}
 
